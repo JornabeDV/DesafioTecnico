@@ -13,7 +13,7 @@
           <img width="110" src="https://avatars.githubusercontent.com/u/103864663?s=400&u=c15958417e895daefc6bdc014da615b1ff78ea3a&v=4"/>
         </a>
         <a href="https://github.com/JornabeDV" target="_blank" rel="author">
-          <h4 style="margin-top: 1rem;">Jorge Beja</br><small>Front-End</small></h4>
+          <h4 style="margin-top: 1rem;">Jorge Beja</br>
         </a>
         <div style='display: flex; flex-direction: column'>
           <a href="https://github.com/JornabeDV" target="_blank">
