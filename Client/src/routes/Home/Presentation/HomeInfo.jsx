@@ -11,8 +11,8 @@ const HomeInfo = () => {
   }, [])
 
   return (
-    <div className='p-5'>
-      <h1 className='text-[40px] font-bold mb-4 p-5 text-center'>BOOKSTORE</h1>
+    <div className='p-5 w-full'>
+      <h1 className='text-[50px] lg:text-[90px] font-bold mb-2 p-3 text-center text-[#80CC28] font-josefin'>ECOBOOKS</h1>
       <BooksCards />
     </div>
   )

@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import '../../index.css'
-import Logo from '../../assets/LogoBookStore.png'
 import { HiMenu } from 'react-icons/hi'
 import { useDispatch } from 'react-redux'
 import { fetchBooks } from '../../app/actions'
+import Logo from '../../assets/LogoEcobooks.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,7 +18,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='bg-gray-600 shadow-lg'>
+    <nav className='bg-[#13121280] shadow-lg'>
       <div className='container mx-auto px-4'>
         <div className='flex justify-between items-center h-20'>
           <div className='flex-shrink-0'>
@@ -35,13 +34,13 @@ const Navbar = () => {
           <div className='hidden md:block'>
             <ul className='flex space-x-4'>
               <li>
-                <Link to='/Home' className='text-white hover:text-gray-300'>Home</Link>
+                <Link to='/Home' className='text-white text-m bg-black py-2 px-8 rounded-lg border-2 border-[#B2FA5B] shadow'>Home</Link>
               </li>
               <li>
-                <Link to='/Form' className='text-white hover:text-gray-300'>AddBook</Link>
+                <Link to='/Form' className='text-white text-m bg-black py-2 px-8 rounded-lg border-2 border-[#B2FA5B] shadow'>AddBook</Link>
               </li>
               <li>
-                <Link to='/Favorites' className='text-white hover:text-gray-300'>Favorites</Link>
+                <Link to='/Favorites' className='text-white text-m bg-black py-2 px-8 rounded-lg border-2 border-[#B2FA5B] shadow'>Favorites</Link>
               </li>
             </ul>
           </div>

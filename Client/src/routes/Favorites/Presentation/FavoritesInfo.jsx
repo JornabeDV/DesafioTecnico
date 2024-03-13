@@ -18,7 +18,7 @@ const FavoritesInfo = () => {
   console.log(handleFavoriteClick)
   return (
     <div className='p-5'>
-      <h1 className='text-[40px] font-bold mb-4 p-5 text-center'>FAVORITES</h1>
+      <h1 className='text-[50px] lg:text-[90px] font-bold mb-4 p-5 text-center text-[#80CC28] font-josefin'>FAVORITES</h1>
       <FavoriteBooksCards books={favoriteBooks} onFavoriteClick={handleFavoriteClick} />
     </div>
   )

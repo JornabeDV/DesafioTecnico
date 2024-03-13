@@ -8,8 +8,8 @@ const SearchBar = ({ onSearch, onReset }) => {
   }
 
   const handleReset = () => {
-    setSearchTerm('') // Vaciar la barra de búsqueda
-    onReset() // Restablecer y renderizar todos los libros nuevamente
+    setSearchTerm('')
+    onReset()
   }
 
   const handleChange = (event) => {
@@ -18,14 +18,14 @@ const SearchBar = ({ onSearch, onReset }) => {
 
   return (
     <div>
-      <input
-        type='text'
-        value={searchTerm}
-        onChange={handleChange}
-        placeholder='Search by title...'
-      />
-      <button onClick={handleSearch}>Search</button>
-      <button onClick={handleReset}>Reset</button>
+      <input className='p-2 rounded m-3' type='text' value={searchTerm} onChange={handleChange} placeholder='Search by title...' />
+      <button onClick={handleSearch} className='m-3 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded'>
+        Search
+      </button>
+
+      <button onClick={handleReset} className='m-3 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded'>
+        Reset
+      </button>
     </div>
   )
 }

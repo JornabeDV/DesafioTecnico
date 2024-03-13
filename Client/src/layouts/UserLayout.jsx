@@ -4,7 +4,7 @@ import '../index.css'
 
 const MainLayout = () => {
   return (
-    <div className='flex flex-col min-h-screen'>
+    <div className='flex flex-col min-h-screen bg-[#222121] font-josefin'>
       <header>
         <NavBar />
       </header>

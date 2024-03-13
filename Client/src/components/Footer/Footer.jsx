@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <footer className='bg-gray-600 shadow-lg h-20'>
+    <footer className='bg-[#13121280] shadow-lg h-20 lg:text-xl'>
       <div className='container mx-auto px-4'>
-        <div className='flex justify-between items-center h-20'>
+        <div className='flex justify-center lg:justify-between items-center h-20'>
           <div className='text-white'>
             <p>© 2024 BookStore. All Rights Reserved.</p>
           </div>

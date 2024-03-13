@@ -12,7 +12,6 @@ const BooksCards = ({ onFavoriteClick }) => {
   useEffect(() => {
     if (searchTerm) {
       dispatch(searchBooksByTerm(searchTerm))
-      console.log(books)
     } else {
       dispatch(fetchBooks())
     }
@@ -22,20 +21,26 @@ const BooksCards = ({ onFavoriteClick }) => {
     dispatch(deleteBook(_id))
   }
 
+  if (loading || !books) {
+    return <p>Cargando libros...</p>
+  }
+
   const handleSearch = (term) => {
     setSearchTerm(term)
   }
 
   const handleReset = () => {
-    setSearchTerm('') // Vaciar la barra de búsqueda
-    dispatch(fetchBooks()) // Restablecer y renderizar todos los libros nuevamente
+    setSearchTerm('')
+    dispatch(fetchBooks())
   }
 
-  const filteredBooks = searchTerm ? books.data.filter(book => book.title.toLowerCase().includes(searchTerm.toLowerCase())) : books.data
+  const filteredBooks = searchTerm
+    ? (books.data || []).filter(book => book.title.toLowerCase().includes(searchTerm.toLowerCase()))
+    : (books.data || [])
 
   return (
-    <div>
-      <SearchBar onSearch={handleSearch} onReset={handleReset} /> {/* Pasar handleReset como prop */}
+    <div className='flex flex-col items-center'> {/* Flexbox container para centrar la SearchBar */}
+      <SearchBar onSearch={handleSearch} onReset={handleReset} />
       <div className='p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
         {filteredBooks.map((book) => (
           <BookCard

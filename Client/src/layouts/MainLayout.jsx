@@ -3,7 +3,7 @@ import '../index.css'
 
 const MainLayout = () => {
   return (
-    <div className='flex flex-col min-h-screen'>
+    <div className='flex flex-col min-h-screen font-josefin'>
       <main className='flex-1'>
         <Outlet />
       </main>

@@ -25,7 +25,7 @@ const BookCard = ({ book, onDelete }) => {
   }
 
   return (
-    <div className='bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden flex flex-col items-center relative'>
+    <div className='bg-white border border-[#B2FA5B] rounded-lg shadow-md overflow-hidden flex flex-col items-center relative p-2'>
       <FavoriteButton isFavorite={book.favorite} onClick={handleFavorite} className='ab top-0 right-0 m-2' />
       <div className='p-4 text-center'>
         <h3 className='text-xl font-bold mb-2'>{book.title}</h3>
@@ -36,7 +36,7 @@ const BookCard = ({ book, onDelete }) => {
       <div className='p-4'>
         <ButtonCard onClick={handleDelete} color='red'>Eliminar</ButtonCard>
         <Link to={`/Form/${book._id}`}>
-          <ButtonCard color='blue'>Editar</ButtonCard>
+          <ButtonCard>Editar</ButtonCard>
         </Link>
       </div>
     </div>

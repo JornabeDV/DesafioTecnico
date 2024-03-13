@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { IoIosApps, IoIosCloseCircle, IoLogoLinkedin, IoLogoGithub, IoLogoFacebook, IoLogoInstagram, IoLogoYoutube } from 'react-icons/io'
 import { FaGooglePlay, FaApple } from 'react-icons/fa'
+import LogoEcoBook from '../../../assets/LogoEcobooks.png'
 
 const LandingPageInfo = () => {
   const [openNav, setOpenNav] = React.useState(false)
@@ -34,7 +35,7 @@ const LandingPageInfo = () => {
         <nav className='z-10  max-w-full rounded-none px-8 py-[14px] backdrop-blur bg-[#1E1E1E99]'>
           <div className='h-[62px] flex items-center justify-between text-blue-gray-900'>
             <a href='#home' className='mr-4 ml-10 cursor-pointer py-1.5 '>
-              <img src='/img/Logox2.png' alt='Logo EcoPay' width={200} />
+              <img src={LogoEcoBook} alt='Logo EcoBook' width={200} />
             </a>
             <div className='flex items-center gap-4'>
               <div className='mr-4 hidden lg:block'>{navList}</div>
@@ -60,12 +61,13 @@ const LandingPageInfo = () => {
         </nav>
       </header>
 
-      <main className='w-full flex flex-col justify-center items-center'>
-
-        <div id='home' className='h-[710px] pt-[150px] pb-[200px] px-[20px] lg:pl-[22%] flex flex-col text-center lg:text-left'>
-          <p className='text-5xl'>La primer</p>
-          <p className='py-3 text-8xl bg-gradient-to-r from-[#B2FA5B] to-[#3BC53F] inline-block text-transparent bg-clip-text'>EcoBook</p>
-          <p className='text-5xl'>de Latinoamérica</p>
+      <main className='font-roboto w-full flex flex-col justify-center items-center'>
+        <div className='flex relative'>
+          <div id='home' className='font-roboto relative z-10 h-[710px] pt-[150px] pb-[200px] px-[20px] lg:pl-[22%] flex flex-col justify-center items-center text-center lg:text-left'>
+            <p className='text-3xl lg:text-5xl'>Virtual Store</p>
+            <p className='py-[50px] text-4xl lg:text-8xl bg-gradient-to-r from-[#B2FA5B] to-[#3BC53F] inline-block text-transparent bg-clip-text'>ECOBOOK</p>
+            <p className='text-3xl lg:text-5xl'>Latinoamérica</p>
+          </div>
         </div>
 
         <div id='servicios' className='lg:h-[850px] pb-[60px] pt-[150px] px-[20px] lg:pl-[60px] lg:pr-0 text-center bg-[#3E3E3Eb8] w-full border-b-2 border-black shadow-md'>

@@ -78,12 +78,12 @@ const BooksForm = () => {
         resetForm()
       }}
     >
-      <Form className='max-w-md mx-auto bg-slate-600 p-5 rounded-md shadow-sm'>
+      <Form className='max-w-md mx-auto bg-black border-[#B2FA5B] p-5 rounded-md shadow-sm'>
         <FormField label='Title' name='title' type='text' />
         <FormField label='Author' name='author' type='text' />
         <FormField label='Year of Publish' name='yearOfPublish' type='text' />
         <FormField label='Genre' name='genre' type='text' />
-        <button type='submit' className='bg-slate-700 text-white w-full px-4 py-2 rounded-md hover:bg-slate-500'>
+        <button type='submit' className='bg-[#B2FA5B] text-xl text-black w-full px-4 py-3 rounded-md hover:bg-[#b2fa5b54]'>
           {params.id ? 'Update Book' : 'Add Book'}
         </button>
       </Form>
