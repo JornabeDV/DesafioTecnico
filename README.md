@@ -29,7 +29,7 @@
 
 <br>
 
-<h1 align='center'> VISTAS  </h1>
+<h1 align='center'> Vistas  </h1>
 
 <br>
 
@@ -55,3 +55,36 @@
 ![Nodemon](https://img.shields.io/badge/Nodemon-76D04B?style=for-the-badge&logo=nodemon&logoColor=white)
 ![CORS](https://img.shields.io/badge/CORS-%23FF6F61.svg?style=for-the-badge&logo=CORS&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+
+<hr>
+<h1> Como inicializar EcoBook en tu PC </h1>
+
+A continuación, te proporcionaremos las instrucciones para instalar y utilizar nuestro sistema, desarrollado con React.
+
+<h2> Requisitos previos</h2>
+Asegúrate de tener instalado Node.js en tu máquina antes de comenzar. Puedes descargarlo desde <a href='https://nodejs.org'> aquí </a>.
+
+<h2>Pasos de instalación</h2>
+
+Clonar repositorio
+
+```sh
+git clone https://github.com/JornabeDV/DesafioTecnico.git
+```
+
+Instalar dependencias
+
+```sh
+npm install
+```
+
+Correr el proyecto en Client
+
+```sh
+npm run dev
+```
+Correr el proyecto en Server
+
+```sh
+npm run start
+```
