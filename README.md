@@ -48,7 +48,7 @@
 ![SweetAlert](https://img.shields.io/badge/SweetAlert-3085d6?style=for-the-badge&logo=sweetalert&logoColor=white)
 ![Redux Thunk](https://img.shields.io/badge/Redux_Thunk-764ABC?style=for-the-badge&logo=redux&logoColor=white)
 
-  <h2>BacK-End</h2>
+  <h2>Back-End</h2>
 
 ![Express](https://img.shields.io/badge/express-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![MongoDB](https://img.shields.io/badge/mongodb-%23316192.svg?style=for-the-badge&logo=mongodb&logoColor=white) 
@@ -59,7 +59,7 @@
 <hr>
 <h1> Como inicializar EcoBook en tu PC </h1>
 
-A continuación, te proporcionaremos las instrucciones para instalar y utilizar nuestro sistema, desarrollado con React.
+A continuación, te proporcionaremos las instrucciones para instalar y utilizar nuestro proyecto.
 
 <h2> Requisitos previos</h2>
 Asegúrate de tener instalado Node.js en tu máquina antes de comenzar. Puedes descargarlo desde <a href='https://nodejs.org'> aquí </a>.
