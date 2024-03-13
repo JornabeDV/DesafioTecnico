@@ -1,4 +1,3 @@
-    <!-- PROJECT LOGO -->
   <div align='center'><a href="" target="_blank">
       <img style='background-color:black' src="./Client/src/assets/LogoEcobooks.png" width="200">
     </a>
