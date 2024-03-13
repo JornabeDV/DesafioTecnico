@@ -1,5 +1,5 @@
     <!-- PROJECT LOGO -->
-  <div align='center'><a href="https://www.nocountry.tech/" target="_blank">
+  <div align='center'><a href="" target="_blank">
       <img style='background-color:black' src="./Client/src/assets/LogoEcobooks.png" width="200">
     </a>
   </div>
@@ -19,6 +19,10 @@
           <a href="https://github.com/JornabeDV" target="_blank">
             <img style='width:8rem' src="https://img.shields.io/static/v1?style=for-the-badge&message=GitHub&color=172B4D&logo=GitHub&logoColor=FFFFFF&label="/>
           </a>
+          <br/>
+          <a href="https://www.linkedin.com/in/jorge-nahuel-beja-rosa/" target="_blank">
+          <img style='width:8rem' src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/>
+        </a>
         </div>
       </div>
     </td>
@@ -30,9 +34,9 @@
 
 <br>
 
-<section id='tech-stack'>
-  <h1> Tecnologias Usadas </h1>
-  <h2>Front-End</h2>
+<section align='center' id='tech-stack'>
+  <h1 align='center'> Tecnologias Usadas </h1>
+  <h2 align='center'>Front-End</h2>
 
 ![React](https://img.shields.io/static/v1?style=for-the-badge&message=React&color=222222&logo=React&logoColor=61DAFB&label=)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
