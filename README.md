@@ -30,11 +30,6 @@
 <br>
 
 <h1 align='center'> Vistas  </h1>
-![landingPage1](https://github.com/JornabeDV/DesafioTecnico/assets/103864663/2514378f-8c25-48bd-b000-278e98acec46)
-
-
-
-
 <br>
 
 <section align='center' id='tech-stack'>
