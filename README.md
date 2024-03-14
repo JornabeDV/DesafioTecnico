@@ -30,8 +30,15 @@
 <br>
 
 <h1 align='center'> Vistas  </h1>
-![image](https://github.com/JornabeDV/DesafioTecnico/assets/103864663/ad55fed0-6fb9-4ca1-be16-aecb4c1f2f07)
-![Home](https://github.com/JornabeDV/DesafioTecnico/assets/103864663/b140cbe8-94ee-400a-9584-0857afd98845)
+
+
+![landingPage1](https://github.com/JornabeDV/DesafioTecnico/assets/103864663/87353ad6-fa9a-45ec-a830-de3b02408e9d)
+![landingPage2](https://github.com/JornabeDV/DesafioTecnico/assets/103864663/ee53b0cb-9c3a-42a1-90c8-7f93c4a47192)
+![Home](https://github.com/JornabeDV/DesafioTecnico/assets/103864663/162b9e74-52cf-4024-93a9-24bfa1a614e6)
+![Form](https://github.com/JornabeDV/DesafioTecnico/assets/103864663/11b9f666-d21e-4d9e-b2ab-06f9c926e3ec)
+![Favorites](https://github.com/JornabeDV/DesafioTecnico/assets/103864663/954fb050-6e3a-4431-ad02-9f8f59471395)
+
+
 
 
 <img style='' src="./Client/src/assets/views/landingPage2.png"/>
