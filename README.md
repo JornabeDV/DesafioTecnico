@@ -35,7 +35,6 @@
 <img style='' src="./Client/src/assets/views/Home.png"/>
 <img style='' src="./Client/src/assets/views/Form.png"/>
 <img style='' src="./Client/src/assets/views/Favorite.png"/>
-
 <br>
 
 <section align='center' id='tech-stack'>
