@@ -30,6 +30,11 @@
 <br>
 
 <h1 align='center'> Vistas  </h1>
+<img style='' src="./Client/src/assets/views/landingPage1.png"/>
+<img style='' src="./Client/src/assets/views/landingPage2.png"/>
+<img style='' src="./Client/src/assets/views/Home.png"/>
+<img style='' src="./Client/src/assets/views/Form.png"/>
+<img style='' src="./Client/src/assets/views/Favorite.png"/>
 
 <br>
 
