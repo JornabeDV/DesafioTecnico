@@ -4,7 +4,7 @@ const Footer = () => {
       <div className='container mx-auto px-4'>
         <div className='flex justify-center lg:justify-between items-center h-20'>
           <div className='text-white'>
-            <p>© 2024 BookStore. All Rights Reserved.</p>
+            <p>© 2024 EcoBook. All Rights Reserved.</p>
           </div>
           <div className='hidden md:block'>
             <ul className='flex space-x-4'>
