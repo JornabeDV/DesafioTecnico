@@ -9,11 +9,6 @@ export default {
       josefin: [
         'Josefin Sans', 'sans-serif'
       ]
-    },
-    extend: {
-      colors: {
-        colorFooter: '#434343'
-      }
     }
   }
 }
