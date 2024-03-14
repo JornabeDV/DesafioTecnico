@@ -12,7 +12,6 @@ const BooksForm = () => {
   const navigate = useNavigate()
   const params = useParams()
   const { loading, books } = useSelector(state => state.books)
-  console.log(books)
   const [initialValues, setInitialValues] = useState({
     title: '',
     author: '',
@@ -40,10 +39,7 @@ const BooksForm = () => {
   }
 
   useEffect(() => {
-    console.log(books)
-    console.log(params._id)
-    if ((params._id && Array.isArray(books.data))) {
-      console.log(books)
+    if (params._id && books.data && Array.isArray(books.data)) {
       const book = books.data.find((book) => book._id === params._id)
       if (book) {
         setInitialValues({
@@ -52,10 +48,16 @@ const BooksForm = () => {
           yearOfPublish: book.yearOfPublish,
           genre: book.genre
         })
-        console.log(book)
       } else {
         console.log('Book not found')
       }
+    } else if (!params._id) {
+      setInitialValues({
+        title: '',
+        author: '',
+        yearOfPublish: '',
+        genre: ''
+      })
     } else {
       console.log('Failed')
     }
@@ -84,7 +86,7 @@ const BooksForm = () => {
         <FormField label='Year of Publish' name='yearOfPublish' type='text' />
         <FormField label='Genre' name='genre' type='text' />
         <button type='submit' className='bg-[#B2FA5B] text-xl text-black w-full px-4 py-3 rounded-md hover:bg-[#b2fa5b54]'>
-          {params.id ? 'Update Book' : 'Add Book'}
+          {params._id ? 'Update Book' : 'Add Book'}
         </button>
       </Form>
     </Formik>
