@@ -38,13 +38,6 @@
 ![Form](https://github.com/JornabeDV/DesafioTecnico/assets/103864663/11b9f666-d21e-4d9e-b2ab-06f9c926e3ec)
 ![Favorites](https://github.com/JornabeDV/DesafioTecnico/assets/103864663/954fb050-6e3a-4431-ad02-9f8f59471395)
 
-
-
-
-<img style='' src="./Client/src/assets/views/landingPage2.png"/>
-<img style='' src="./Client/src/assets/views/Home.png"/>
-<img style='' src="./Client/src/assets/views/Form.png"/>
-<img style='' src="./Client/src/assets/views/Favorite.png"/>
 <br>
 
 <section align='center' id='tech-stack'>
