@@ -20,16 +20,16 @@ const LandingPageInfo = () => {
         <a href='#servicios' className=''>Servicios</a>
       </li>
       <li className='p-1 font-normal'>
-        <a href='#tarjeta' className=''>Blog de lectura</a>
+        <a href='#blog' className=''>Blog de lectura</a>
       </li>
       <li className='p-1 font-normal'>
-        <a href='#prestamos' className=''>Fundación</a>
+        <a href='#fundación' className=''>Fundación</a>
       </li>
     </ul>
   )
 
   return (
-    <div className='bg-[#222121] h-full w-full pt-[50px] lg:bg-OnBoarding-bgImage lg:bg-OnBoarding-bgPosition lg:bg-no-repeat scroll-smooth'>
+    <div className='bg-[#222121] h-full w-full pt-[50px] lg:bg-no-repeat scroll-smooth'>
 
       <header className='sticky top-0 h-[90px] shadow-md '>
         <nav className='z-10  max-w-full rounded-none px-8 py-[14px] backdrop-blur bg-[#1E1E1E99]'>
@@ -40,8 +40,7 @@ const LandingPageInfo = () => {
             <div className='flex items-center gap-4'>
               <div className='mr-4 hidden lg:block'>{navList}</div>
               <div className='flex items-center gap-x-2 text-center'>
-                <Link to='/Register' className='text-base bg-black py-2 px-8 rounded-lg border-2 border-[#B2FA5B] shadow hidden lg:inline-block'> Registrarse</Link>
-                <Link to='/Login' className='text-base bg-transparent py-2 px-8 rounded-lg border-2 border-white shadow hidden lg:inline-block'> Iniciar sesión</Link>
+                <Link to='/Home' className='text-base bg-black py-2 px-8 rounded-lg border-2 border-[#B2FA5B] shadow hidden lg:inline-block'> BookStore</Link>
               </div>
               <button
                 className='ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden'
@@ -54,53 +53,61 @@ const LandingPageInfo = () => {
           <nav className={openNav ? 'flex flex-col items-center w-full h-[180px]' : 'hidden'}>
             {navList}
             <div className='flex items-center gap-x-2 text-center'>
-              <Link to='/Register' className='text-sm bg-black py-2 px-8 rounded-lg border-2 border-[#B2FA5B] shadow'> Registrarse</Link>
-              <Link to='/Login' className='text-sm bg-transparent py-2 px-8 rounded-lg border-2 border-white shadow'> Iniciar sesión</Link>
+              <Link to='/Home' className='text-sm bg-black py-2 px-8 rounded-lg border-2 border-[#B2FA5B] shadow'> BookStore</Link>
             </div>
           </nav>
         </nav>
       </header>
 
       <main className='font-roboto w-full flex flex-col justify-center items-center'>
-        <div className='flex relative'>
-          <div id='home' className='font-roboto relative z-10 h-[710px] pt-[150px] pb-[200px] px-[20px] lg:pl-[22%] flex flex-col justify-center items-center text-center lg:text-left'>
+
+        <div className='flex'>
+          <div id='home' className='z-10 h-[710px] pt-[150px] pb-[200px] px-[20px] flex flex-col justify-center items-center text-center lg:text-left'>
             <p className='text-3xl lg:text-5xl'>Virtual Store</p>
-            <p className='py-[50px] text-4xl lg:text-8xl bg-gradient-to-r from-[#B2FA5B] to-[#3BC53F] inline-block text-transparent bg-clip-text'>ECOBOOK</p>
+            <p className='text-[50px] lg:text-[90px] font-bold mb-2 p-3 text-center text-[#80CC28] font-josefin'>ECOBOOKS</p>
             <p className='text-3xl lg:text-5xl'>Latinoamérica</p>
           </div>
         </div>
 
-        <div id='servicios' className='lg:h-[850px] pb-[60px] pt-[150px] px-[20px] lg:pl-[60px] lg:pr-0 text-center bg-[#3E3E3Eb8] w-full border-b-2 border-black shadow-md'>
+        <div id='servicios' className='lg:h-[850px] pb-[60px] pt-[150px] px-[20px] lg:pl-[60px] lg:pr-0 text-center bg-[#3E3E3Eb8] w-full border-b-2 border-none shadow-md' style={{ backgroundImage: 'url("https://media.cntraveler.com/photos/5eb18e42fc043ed5d9779733/16:9/w_1920%2Cc_limit/BlackForest-Germany-GettyImages-147180370.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
           <div className='w-full flex flex-col items-center lg:flex-row lg:justify-between'>
-            <div className='w-[360px] lg:pr-[20px] text-left'>
-              <p className='text-left text-4xl'>Servicios Latam</p>
-              <h2 className='text-2xl pb-2 pt-8'>Búsqueda avanzada</h2>
-              <p>Encuentra libros por título, autor, género y más, con filtros avanzados para refinar tus resultados.</p>
-              <h2 className='text-2xl pb-2 pt-8'>Recomendaciones personalizadas</h2>
-              <p>Descubre nuevos libros basados en tus preferencias de lectura anteriores.</p>
-              <h2 className='text-2xl pb-2 pt-8'>Reseñas y Calificaciones</h2>
-              <p>Lee y deja reseñas para ayudar a otros a elegir su próxima lectura.</p>
+            <div className='w-full lg:w-[60%] lg:pr-[20px] text-left'>
+              <p className='text-left text-6xl lg:text-7xl font-bold'>Servicios Latam</p>
+              <h2 className='text-4xl pb-2 pt-8'>Búsqueda avanzada</h2>
+              <p className='text-2xl'>Encuentra libros por título, autor, género y más, con filtros avanzados para refinar tus resultados.</p>
+              <h2 className='text-4xl pb-2 pt-8'>Recomendaciones personalizadas</h2>
+              <p className='text-2xl'>Descubre nuevos libros basados en tus preferencias de lectura anteriores.</p>
+              <h2 className='text-4xl pb-2 pt-8'>Reseñas y Calificaciones</h2>
+              <p className='text-2xl'>Lee y deja reseñas para ayudar a otros a elegir su próxima lectura.</p>
             </div>
-            <img src='/img/Group2.png' alt='Lugares de Latinoamérica' className='size-5/6 pt-10 lg:size-2/3' />
           </div>
         </div>
 
-        <div id='tarjeta' className='py-[150px] px-[20px] w-full lg:h-[850px] text-right border-b-2 border-black shadow-md flex flex-col items-center lg:flex-row lg:justify-center'>
-          <div className='w-[380px] lg:w-[480px] flex flex-col justify-around items-end py-2 pr-6'>
-            <p className='text-4xl lg:text-6xl'>Blog de lectura</p>
-            <img src='/img/Top Estate Agent.png' alt='Usuarios EcoPay' className='w-[280px] pt-2' />
+        <div id='blog' className='lg:h-[850px] pb-[60px] pt-[150px] px-[20px] lg:pl-[60px] lg:pr-0 text-center bg-none w-full border-b-2 border-none shadow-md' style={{ backgroundImage: 'url("https://pymstatic.com/27422/conversions/blogs-de-libros-wide_webp.webp")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+          <div className='w-full flex flex-col items-center text-black lg:flex-row lg:justify-end'>
+            <div className='w-full lg:w-[60%] lg:pr-[20px] text-right'>
+              <p className='text-6xl lg:text-7xl font-bold'>Blog de Lectura</p>
+              <h2 className='text-4xl pb-2 pt-8'>Participación de la comunidad</h2>
+              <p className='text-2xl'>Fomentamos la participación de los lectores a través de comentarios en las reseñas, encuestas, y debates sobre libros y temas literarios.</p>
+              <h2 className='text-4xl pb-2 pt-8'>Actualización regular</h2>
+              <p className='text-2xl'>Blog de lectura suelen ser actualizados regularmente con nuevas reseñas, artículos y contenido fresco para mantener el interés de los lectores.</p>
+              <h2 className='text-4xl pb-2 pt-8'>Presencia en redes sociales</h2>
+              <p className='text-2xl'>Compartimos en nuestras redes sociales enlaces de publicaciones, interactúamos con los seguidores y promocionamos eventos literario.</p>
+            </div>
           </div>
-          <img src='/img/Card.png' alt='Targeta EcoPay' className='w-[380px] lg:w-[480px] py-2 pl-2' />
         </div>
 
-        <div id='prestamos' className='py-[150px] px-[20px] w-full lg:h-[850px] border-b-2 border-black shadow-md flex flex-wrap justify-center'>
-          <div className='w-[320px] pr-[20px] py-2 flex flex-col justify-around items-end text-right'>
-            <img src='/img/Blog.png' alt='Usuarios EcoPay' className='w-[100px] pb-3' />
-            <img src='/img/Blog2.png' alt='Usuarios EcoPay' className='w-[260px]' />
-          </div>
-          <div className='w-[320px] pl-[20px] py-2 flex flex-col justify-around items-start text-left'>
-            <img src='/img/Blog3.png' alt='Usuarios EcoPay' className='w-[300px]' />
-            <p className='text-4xl w-[300px] pt-2'>Fundación EcoBook</p>
+        <div id='fundación' className='lg:h-[850px] pb-[60px] pt-[150px] px-[20px] lg:pl-[60px] lg:pr-0 text-center w-full border-b-2 border-none shadow-md' style={{ backgroundImage: 'url("https://santanderpost.com.ar/wp-content/uploads/2023/01/Bosques-Reforestacion-Arboles-Plantar.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+          <div className='w-full flex flex-col items-center text-white lg:flex-row lg:justify-between'>
+            <div className='w-full lg:w-[60%] lg:pr-[20px] text-left'>
+              <p className='text-left text-6xl lg:text-7xl font-bold'>Fundación EcoBook</p>
+              <h2 className='text-4xl pb-2 pt-8'>Educación Ambiental</h2>
+              <p className='text-2xl'>Desarrollamos programas educativos para aumentar la conciencia sobre temas ambientales y promover prácticas sostenibles.</p>
+              <h2 className='text-4xl pb-2 pt-8'>Conservación de la biodiversidad</h2>
+              <p className='text-2xl'>Trabajamos para proteger y restaurar hábitats naturales, especies en peligro de extinción y ecosistemas vulnerables.</p>
+              <h2 className='text-4xl pb-2 pt-8'>Campañas de sensibilización y movilización</h2>
+              <p className='text-2xl'>Realizamos campañas para involucrar a la sociedad civil en la protección del medio ambiente y motivar acciones positivas.</p>
+            </div>
           </div>
         </div>
 
@@ -118,29 +125,25 @@ const LandingPageInfo = () => {
 
         <div className='w-full flex flex-col items-center lg:bg-OnBoardingFooter-bgImage lg:bg-OnBoardingFooter-bgPosition lg:bg-no-repeat'>
           <div className='flex flex-wrap justify-around w-full bg-[#3E3E3Eb8] shadow-md'>
-
             <div className='flex flex-col justify-center items-center pb-6'>
               <div className='flex flex-wrap justify-center' />
               <div className='flex flex-col justify-between items-center w-[400px] pt-4'>
                 <p className='text-xl'>Contacto</p>
                 <div className='w-full flex flex-wrap justify-around py-4'>
-                  <IoLogoLinkedin className='w-[50px] h-[50px]' />
+                  <Link to='https://www.linkedin.com/in/jorge-nahuel-beja-rosa/'><IoLogoLinkedin className='w-[50px] h-[50px]' /></Link>
                   <IoLogoFacebook className='w-[50px] h-[50px]' />
                   <IoLogoInstagram className='w-[50px] h-[50px]' />
                   <IoLogoYoutube className='w-[50px] h-[50px]' />
                   <Link to='https://github.com/JornabeDV'><IoLogoGithub className='w-[50px] h-[50px]' /></Link>
-
                 </div>
                 <p className='text-xl'>Location: Latam</p>
               </div>
             </div>
-
           </div>
 
           <div className='p-4'>
             <p>* Copyright © 2024 Jorge Beja. Todos los derechos reservados. EcoBook.</p>
           </div>
-
         </div>
 
       </footer>
