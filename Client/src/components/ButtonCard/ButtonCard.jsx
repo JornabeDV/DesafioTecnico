@@ -1,8 +1,8 @@
-const ButtonCard = ({ onClick, children, color }) => {
+const ButtonCard = ({ onClick, children }) => {
   return (
     <button
       onClick={onClick}
-      className={`bg-${color}-500 hover:bg-${color}-600 text-green font-bold py-2 m-4 px-4 rounded`}
+      className='font-bold py-2 m-2 px-2 rounded'
     >
       {children}
     </button>
