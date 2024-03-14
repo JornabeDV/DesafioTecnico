@@ -30,6 +30,10 @@
 <br>
 
 <h1 align='center'> Vistas  </h1>
+![VistaFavorites](https://github.com/JornabeDV/DesafioTecnico/assets/103864663/2c295e08-3bda-4e59-926b-36c1bb0be8ad)
+![landingPage1](https://github.com/JornabeDV/DesafioTecnico/assets/103864663/c4e2e43f-3381-413b-b3b5-c6c899ccede9)
+
+![image](https://github.com/JornabeDV/DesafioTecnico/assets/103864663/47152044-f6ce-4679-9ddc-9e7f9edd3f20)
 
 <br>
 
