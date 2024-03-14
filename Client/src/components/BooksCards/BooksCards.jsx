@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import BookCard from '../BookCard/BookCard'
 import { deleteBook, fetchBooks, searchBooksByTerm } from '../../app/actions'
 import SearchBar from '../SearchBar/SearchBar'
 
-const BooksCards = ({ onFavoriteClick }) => {
+const BooksCards = () => {
   const { loading, books } = useSelector(state => state.books)
   const dispatch = useDispatch()
   const [searchTerm, setSearchTerm] = useState('')
@@ -18,7 +18,9 @@ const BooksCards = ({ onFavoriteClick }) => {
   }, [dispatch, searchTerm])
 
   const handleDelete = (_id) => {
-    dispatch(deleteBook(_id))
+    dispatch(deleteBook(_id)).then(() => {
+      dispatch(fetchBooks())
+    })
   }
 
   if (loading || !books) {
@@ -38,16 +40,27 @@ const BooksCards = ({ onFavoriteClick }) => {
     ? (books.data || []).filter(book => book.title.toLowerCase().includes(searchTerm.toLowerCase()))
     : (books.data || [])
 
+  const sortedBooks = filteredBooks.slice().sort((a, b) => {
+    const titleA = a.title.toLowerCase()
+    const titleB = b.title.toLowerCase()
+    if (titleA < titleB) {
+      return -1
+    }
+    if (titleA > titleB) {
+      return 1
+    }
+    return 0
+  })
+
   return (
-    <div className='flex flex-col items-center'> {/* Flexbox container para centrar la SearchBar */}
+    <div className='flex flex-col items-center'>
       <SearchBar onSearch={handleSearch} onReset={handleReset} />
-      <div className='p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
-        {filteredBooks.map((book) => (
+      <div className='p-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
+        {sortedBooks.map((book) => (
           <BookCard
             key={book._id}
             book={book}
             onDelete={() => handleDelete(book._id)}
-            onFavoriteClick={() => onFavoriteClick(book._id, book.favorite)}
           />
         ))}
       </div>
