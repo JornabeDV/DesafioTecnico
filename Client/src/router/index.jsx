@@ -56,15 +56,6 @@ export const router = createBrowserRouter([
         ]
       }
 
-      // {
-      //   path: '/ConfirmTransfer',
-      //   element: <ConfirmTransfer />
-      // },
-      // {
-      //   path: '/MovementsHistory',
-      //   element: <MovementsHistory />
-      // },
-
     ]
 
   }
